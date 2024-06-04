@@ -6,7 +6,7 @@ This guide provides step-by-step instructions for integrating the SecureCall SDK
 
 To integrate the SecureCall SDK, add the following URL to your Swift Package Manager:
 
-[https://github.com/expertstack-studios/ios-securecall-sdk.git](https://github.com/expertstack-studios/securedcall-ios-sdk.git)
+https://github.com/expertstack-studios/securedcall-ios-sdk.git
 
 
 ## Add Notification Extension
