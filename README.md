@@ -1,10 +1,10 @@
-# SecureCall SDK Integration Guide
+# SecuredCalls SDK Integration Guide
 
-This guide provides step-by-step instructions for integrating the SecureCall SDK into your iOS app using Swift Package Manager (SPM).
+This guide provides step-by-step instructions for integrating the SecuredCalls SDK into your iOS app using Swift Package Manager (SPM).
 
-## 1. Download the SecureCall SDK
+## 1. Download the SecuredCalls SDK
 
-To integrate the SecureCall SDK, add the following URL to your Swift Package Manager:
+To integrate the SecuredCalls SDK, add the following URL to your Swift Package Manager:
 
 https://github.com/expertstack-studios/securedcall-ios-sdk.git
 
@@ -40,7 +40,7 @@ class NotificationService: UNNotificationServiceExtension {
 <br />
 
 
-- e. Accept the mobile number from the user and persist it using the SecureCall SDK. Ensure the mobile number is provided in E.164 format (e.g., +61477878786).
+- e. Accept the mobile number from the user and persist it using the SecuredCalls SDK. Ensure the mobile number is provided in E.164 format (e.g., +61477878786).
 
 ```swift
 let saveMobileNumberResponse = await SC.saveMobileNumberAsync(mobileNumber: mobileNumberToSave)
@@ -55,7 +55,7 @@ switch saveMobileNumberResponse {
 <br />
 
 
-- f. In your app's AppDelegate, add the following code to register the push notification token with the SecureCall SDK:
+- f. In your app's AppDelegate, add the following code to register the push notification token with the SecuredCalls SDK:
 
 
 ```swift
@@ -72,7 +72,7 @@ func application(
 <br />
 
 
-- g. As per your application workflow, request notification and contacts permissions using the SecureCall SDK's provided methods. Alternatively, you can use your own code to request permissions.
+- g. As per your application workflow, request notification and contacts permissions using the SecuredCalls SDK's provided methods. Alternatively, you can use your own code to request permissions.
 
 ## Example Code to Request Permissions
 
