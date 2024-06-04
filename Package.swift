@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-  name: "EsCallSdk",
+  name: "SecuredCallsSDK",
   products: [
     .library(
       name: "SecuredCallsSDK",
@@ -13,5 +13,5 @@ let package = Package(
   targets: [
     .binaryTarget(
       name: "SecuredCallsSDK",
-      path: "./SecuredCallsSDK/SecuredCallsSDK.xcframework.zip")
+      path: "./SDK/SecuredCallsSDK.xcframework.zip")
   ])
