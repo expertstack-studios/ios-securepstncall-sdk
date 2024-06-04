@@ -1,8 +1,8 @@
-# SecureCall SDK Integration Guide
+# 1. SecureCall SDK Integration Guide
 
 This guide provides step-by-step instructions for integrating the SecureCall SDK into your iOS app using Swift Package Manager (SPM).
 
-## Download the SecureCall SDK
+## 2. Download the SecureCall SDK
 
 To integrate the SecureCall SDK, add the following URL to your Swift Package Manager:
 
@@ -11,7 +11,10 @@ https://github.com/expertstack-studios/securedcall-ios-sdk.git
 
 ## Add Notification Extension
 
-Open your app project in Xcode, select the main app target, and add a new target for the notification extension. Replace the contents of the service file with the following code:
+ a. Open your app project in Xcode
+ b. Select the main app target
+ c. Add a new target for the notification extension. 
+ d. Replace the contents of the service file with the following code:
 
 ```swift
 import UserNotifications
@@ -36,8 +39,8 @@ class NotificationService: UNNotificationServiceExtension {
 ```
 
 
-## Accept and Persist Mobile Number
-Accept the mobile number from the user and persist it using the SecureCall SDK. Ensure the mobile number is provided in E.164 format (e.g., +61477878786).
+
+e. Accept the mobile number from the user and persist it using the SecureCall SDK. Ensure the mobile number is provided in E.164 format (e.g., +61477878786).
 
 ```swift
 let saveMobileNumberResponse = await SC.saveMobileNumberAsync(mobileNumber: mobileNumberToSave)
@@ -50,8 +53,8 @@ switch saveMobileNumberResponse {
 }
 ```
 
-## Register Push Notification Token
-In your app's AppDelegate, add the following code to register the push notification token with the SecureCall SDK:
+
+f. In your app's AppDelegate, add the following code to register the push notification token with the SecureCall SDK:
 
 
 ```swift
@@ -66,12 +69,12 @@ func application(
 }
 ```
 
-## Request Notification and Contacts Permissions
-As per your application workflow, request notification and contacts permissions using the SecureCall SDK's provided methods. Alternatively, you can use your own code to request permissions.
+
+g. As per your application workflow, request notification and contacts permissions using the SecureCall SDK's provided methods. Alternatively, you can use your own code to request permissions.
 
 ## Example Code to Request Permissions
 
-```
+```swift
 func application(
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
@@ -87,8 +90,7 @@ func application(
 
 ```
 
-## Update Info.plist
-In your app's Info.plist file, add the following entries:
+h. In your app's Info.plist file, add the following entries:
 
 Privacy - User Notifications Usage Description
 
