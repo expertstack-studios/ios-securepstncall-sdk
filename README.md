@@ -59,6 +59,12 @@ switch saveMobileNumberResponse {
 
 
 ```swift
+extension Data {
+	var hexString: String {
+		return map { String(format: "%02.2hhx", $0) }.joined()
+	}
+}
+
 func application(
     _ application: UIApplication,
     didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data
