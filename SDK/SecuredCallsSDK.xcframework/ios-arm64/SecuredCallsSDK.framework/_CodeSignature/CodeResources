@@ -10,15 +10,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0MSqTKwUduFvcJcz5+XZymabT/c=
+		JTRS4w43VMz5gYu6YDt8xHBWLY8=
 		</data>
 		<key>Modules/SecuredCallsSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		hZohcjT+lTzR9F2VpccbAXFzAEo=
+		gXtQ1nBanLMKeiWhVFaVGvMzdw8=
 		</data>
 		<key>Modules/SecuredCallsSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		uWDWxJZuzJrbCi/bo2wD5dhvNME=
+		55dYRkgnUlJI8cKbxIH7hHJuzLQ=
 		</data>
 		<key>Modules/SecuredCallsSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/SecuredCallsSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		uWDWxJZuzJrbCi/bo2wD5dhvNME=
+		55dYRkgnUlJI8cKbxIH7hHJuzLQ=
 		</data>
 		<key>Modules/SecuredCallsSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		1BGA5Y2TrLweRF52RQdknJjM+as=
+		YhC4fY5Gr1F1njB97/zS3aY3mmA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,14 +58,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ciq61ZEc1NUoQ9AD0roGJcXBDxD/Ylfg3rIRUBxpNEE=
+			smocKUeEcSN6akIvG2cSlcrVINddj25/hfGE1zXKjws=
 			</data>
 		</dict>
 		<key>Modules/SecuredCallsSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vaCOxqPGuAKvZsXw3bbesPP8shk+0pqvWbkAWFhHV/I=
+			xCppXrQbNkid279CQV13iHf1xeblJ4TspkPt9Xdy+0E=
 			</data>
 		</dict>
 		<key>Modules/SecuredCallsSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -79,14 +79,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vaCOxqPGuAKvZsXw3bbesPP8shk+0pqvWbkAWFhHV/I=
+			xCppXrQbNkid279CQV13iHf1xeblJ4TspkPt9Xdy+0E=
 			</data>
 		</dict>
 		<key>Modules/SecuredCallsSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uWYlMXai32lzy75D4O/x5gov/4faC+xMlWdKJ87Y9uU=
+			B092OxgE8m/JF8DQoCxJECE8hwyMOTYwow1oUL4uFCk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

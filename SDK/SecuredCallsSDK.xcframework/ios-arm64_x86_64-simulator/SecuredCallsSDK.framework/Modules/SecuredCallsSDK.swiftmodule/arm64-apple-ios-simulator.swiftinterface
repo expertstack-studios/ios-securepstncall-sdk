@@ -80,6 +80,14 @@ public enum CallDirection : Swift.Int16, Swift.Codable {
     get
   }
 }
+public struct ScSDKSettingsModel : Swift.Hashable {
+  public static let `default`: SecuredCallsSDK.ScSDKSettingsModel
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: SecuredCallsSDK.ScSDKSettingsModel, b: SecuredCallsSDK.ScSDKSettingsModel) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public struct ScreenDimensions : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -119,12 +127,6 @@ public struct CallInfoModel {
   public var callType: SecuredCallsSDK.CallType
   public var callTime: Foundation.Date
 }
-public protocol ILoggerService {
-  func logInformation(message: Swift.String)
-  func logWarning(message: Swift.String)
-  func logError(message: Swift.String)
-  func logDebug(message: Swift.String)
-}
 extension SecuredCallsSDK.ContactsEntity {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<SecuredCallsSDK.ContactsEntity>
   @objc @NSManaged dynamic public var contactIdentifier: Swift.String? {
@@ -139,6 +141,18 @@ extension SecuredCallsSDK.ContactsEntity {
 @_inheritsConvenienceInitializers @objc(ContactsEntity) public class ContactsEntity : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
+}
+public enum LogLevel : Swift.Int {
+  case Error
+  case Warning
+  case Debug
+  case Information
+  case Off
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 extension Foundation.Data {
   public var prettyJson: Swift.String {
@@ -199,7 +213,7 @@ public protocol SecuredCallsDelegate : AnyObject {
   func didUpdateCallHistory()
 }
 @_hasMissingDesignatedInitializers public class SecuredCalls {
-  public static func initialize(_ clientSecret: Swift.String, configFileName: Swift.String = "Config", handlePermission: Swift.Bool = false) throws
+  public static func initialize(_ clientSecret: Swift.String, configFileName: Swift.String = "Config", settings: SecuredCallsSDK.ScSDKSettingsModel = .default) throws
   public static func setHistoryDelegate(_ delegate: (any SecuredCallsSDK.SecuredCallsDelegate)?)
   public static func requestNotificationPermissionAsync() async
   public class func requestContactAccessAsync() async
@@ -280,3 +294,6 @@ extension SecuredCallsSDK.CallDirection : Swift.Equatable {}
 extension SecuredCallsSDK.CallDirection : Swift.Hashable {}
 extension SecuredCallsSDK.CallDirection : Swift.RawRepresentable {}
 extension SecuredCallsSDK.DeviceInfoHeader : Swift.Sendable {}
+extension SecuredCallsSDK.LogLevel : Swift.Equatable {}
+extension SecuredCallsSDK.LogLevel : Swift.Hashable {}
+extension SecuredCallsSDK.LogLevel : Swift.RawRepresentable {}
