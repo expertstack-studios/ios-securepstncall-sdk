@@ -4,6 +4,7 @@
 import CommonCrypto
 import Contacts
 import CoreData
+import CoreLocation
 import Foundation
 import OSLog
 @_exported import SecuredCallsSDK
@@ -65,6 +66,9 @@ extension Foundation.Bundle {
 public enum CallType : Swift.Int16, Swift.Codable {
   case inApp
   case pstn
+  public var stringValue: Swift.String {
+    get
+  }
   public init?(rawValue: Swift.Int16)
   public typealias RawValue = Swift.Int16
   public var rawValue: Swift.Int16 {
@@ -98,9 +102,19 @@ public struct ScreenDimensions : Swift.Codable {
   @_Concurrency.MainActor public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
+public enum LocationError : Swift.Error {
+  case permissionDenied
+  case locationUnavailable
+  case timeout
+  public static func == (a: SecuredCallsSDK.LocationError, b: SecuredCallsSDK.LocationError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class SheetViewController : UIKit.UIViewController, UIKit.UISheetPresentationControllerDelegate {
-  @_Concurrency.MainActor @preconcurrency public func showSheet(isContactPermissionAvailable: Swift.Bool, isNotificationPermissionAvailable: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func showSheet(isContactPermissionAvailable: Swift.Bool, isNotificationPermissionAvailable: Swift.Bool, isLocationPermissionAvailable: Swift.Bool, isUsingLocationService: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency public func dismissSheet()
   @_Concurrency.MainActor @preconcurrency @objc public func presentationControllerDidDismiss(_ presentationController: UIKit.UIPresentationController)
   @_Concurrency.MainActor @preconcurrency public func sheetPresentationControllerDidDismiss(_ sheetPresentationController: UIKit.UISheetPresentationController)
@@ -113,7 +127,7 @@ public struct ScreenDimensions : Swift.Codable {
   @objc deinit
 }
 public enum PermissionBottomSheetViewPresenter {
-  public static func showSheet(isContactPermissionAvailable: Swift.Bool, isNotificationPermissionAvailable: Swift.Bool)
+  public static func showSheet(isContactPermissionAvailable: Swift.Bool, isNotificationPermissionAvailable: Swift.Bool, isLocationPermissionAvailable: Swift.Bool, isUsingLocationService: Swift.Bool)
   public static func dismissSheet()
 }
 public struct CallInfoModel {
@@ -126,6 +140,7 @@ public struct CallInfoModel {
   public var acceptIncomingCalls: Swift.Bool
   public var callType: SecuredCallsSDK.CallType
   public var callTime: Foundation.Date
+  public var isIncomingCall: Swift.Bool
 }
 extension SecuredCallsSDK.ContactsEntity {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<SecuredCallsSDK.ContactsEntity>
@@ -197,6 +212,10 @@ extension SecuredCallsSDK.CallHistoryEntity {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var isIncomingCall: Swift.Bool {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var note: Swift.String? {
     @objc get
     @objc set
@@ -217,6 +236,7 @@ public protocol SecuredCallsDelegate : AnyObject {
   public static func setHistoryDelegate(_ delegate: (any SecuredCallsSDK.SecuredCallsDelegate)?)
   public static func requestNotificationPermissionAsync() async
   public class func requestContactAccessAsync() async
+  public class func requestLocationPermissionAsync() async
   public static func processNotification()
   @discardableResult
   public static func registerConsumerAsync(customerId: Swift.String) async -> Swift.Result<Swift.Bool, any Swift.Error>
@@ -227,6 +247,7 @@ public protocol SecuredCallsDelegate : AnyObject {
   public static func getCallHistoryAsync() async -> Swift.Result<[SecuredCallsSDK.CallInfoModel], any Swift.Error>
   public static func processNotificationAsync(request: UserNotifications.UNNotificationRequest, withContentHandler contentHandler: @escaping (UserNotifications.UNNotificationContent) -> Swift.Void) async
   public static func timeoutAsync() async
+  public static func callBackFromCallHistory(callId: Swift.String, number: Swift.String? = nil, callType: SecuredCallsSDK.CallType, callIntent: Swift.String = "") async throws
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(BrandingEntity) public class BrandingEntity : CoreData.NSManagedObject {
@@ -294,6 +315,8 @@ extension SecuredCallsSDK.CallDirection : Swift.Equatable {}
 extension SecuredCallsSDK.CallDirection : Swift.Hashable {}
 extension SecuredCallsSDK.CallDirection : Swift.RawRepresentable {}
 extension SecuredCallsSDK.DeviceInfoHeader : Swift.Sendable {}
+extension SecuredCallsSDK.LocationError : Swift.Equatable {}
+extension SecuredCallsSDK.LocationError : Swift.Hashable {}
 extension SecuredCallsSDK.LogLevel : Swift.Equatable {}
 extension SecuredCallsSDK.LogLevel : Swift.Hashable {}
 extension SecuredCallsSDK.LogLevel : Swift.RawRepresentable {}

@@ -997,6 +997,46 @@
             "moduleName": "SecuredCallsSDK"
           },
           {
+            "kind": "Var",
+            "name": "stringValue",
+            "printedName": "stringValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15SecuredCallsSDK8CallTypeO11stringValueSSvp",
+            "mangledName": "$s15SecuredCallsSDK8CallTypeO11stringValueSSvp",
+            "moduleName": "SecuredCallsSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15SecuredCallsSDK8CallTypeO11stringValueSSvg",
+                "mangledName": "$s15SecuredCallsSDK8CallTypeO11stringValueSSvg",
+                "moduleName": "SecuredCallsSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -1894,6 +1934,306 @@
       },
       {
         "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "SecuredCallsSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SecuredCallsSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "SecuredCallsSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SecuredCallsSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LocationError",
+        "printedName": "LocationError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "permissionDenied",
+            "printedName": "permissionDenied",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SecuredCallsSDK.LocationError.Type) -> SecuredCallsSDK.LocationError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LocationError",
+                    "printedName": "SecuredCallsSDK.LocationError",
+                    "usr": "s:15SecuredCallsSDK13LocationErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SecuredCallsSDK.LocationError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LocationError",
+                        "printedName": "SecuredCallsSDK.LocationError",
+                        "usr": "s:15SecuredCallsSDK13LocationErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15SecuredCallsSDK13LocationErrorO16permissionDeniedyA2CmF",
+            "mangledName": "$s15SecuredCallsSDK13LocationErrorO16permissionDeniedyA2CmF",
+            "moduleName": "SecuredCallsSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "locationUnavailable",
+            "printedName": "locationUnavailable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SecuredCallsSDK.LocationError.Type) -> SecuredCallsSDK.LocationError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LocationError",
+                    "printedName": "SecuredCallsSDK.LocationError",
+                    "usr": "s:15SecuredCallsSDK13LocationErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SecuredCallsSDK.LocationError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LocationError",
+                        "printedName": "SecuredCallsSDK.LocationError",
+                        "usr": "s:15SecuredCallsSDK13LocationErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15SecuredCallsSDK13LocationErrorO19locationUnavailableyA2CmF",
+            "mangledName": "$s15SecuredCallsSDK13LocationErrorO19locationUnavailableyA2CmF",
+            "moduleName": "SecuredCallsSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "timeout",
+            "printedName": "timeout",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SecuredCallsSDK.LocationError.Type) -> SecuredCallsSDK.LocationError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LocationError",
+                    "printedName": "SecuredCallsSDK.LocationError",
+                    "usr": "s:15SecuredCallsSDK13LocationErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SecuredCallsSDK.LocationError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LocationError",
+                        "printedName": "SecuredCallsSDK.LocationError",
+                        "usr": "s:15SecuredCallsSDK13LocationErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15SecuredCallsSDK13LocationErrorO7timeoutyA2CmF",
+            "mangledName": "$s15SecuredCallsSDK13LocationErrorO7timeoutyA2CmF",
+            "moduleName": "SecuredCallsSDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LocationError",
+                "printedName": "SecuredCallsSDK.LocationError",
+                "usr": "s:15SecuredCallsSDK13LocationErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LocationError",
+                "printedName": "SecuredCallsSDK.LocationError",
+                "usr": "s:15SecuredCallsSDK13LocationErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15SecuredCallsSDK13LocationErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s15SecuredCallsSDK13LocationErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "SecuredCallsSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15SecuredCallsSDK13LocationErrorO9hashValueSivp",
+            "mangledName": "$s15SecuredCallsSDK13LocationErrorO9hashValueSivp",
+            "moduleName": "SecuredCallsSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15SecuredCallsSDK13LocationErrorO9hashValueSivg",
+                "mangledName": "$s15SecuredCallsSDK13LocationErrorO9hashValueSivg",
+                "moduleName": "SecuredCallsSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15SecuredCallsSDK13LocationErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s15SecuredCallsSDK13LocationErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "SecuredCallsSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15SecuredCallsSDK13LocationErrorO",
+        "mangledName": "$s15SecuredCallsSDK13LocationErrorO",
+        "moduleName": "SecuredCallsSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1937,7 +2277,7 @@
           {
             "kind": "Function",
             "name": "showSheet",
-            "printedName": "showSheet(isContactPermissionAvailable:isNotificationPermissionAvailable:)",
+            "printedName": "showSheet(isContactPermissionAvailable:isNotificationPermissionAvailable:isLocationPermissionAvailable:isUsingLocationService:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1955,11 +2295,23 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15SecuredCallsSDK19SheetViewControllerC04showD028isContactPermissionAvailable0h12NotificationjK0ySb_SbtF",
-            "mangledName": "$s15SecuredCallsSDK19SheetViewControllerC04showD028isContactPermissionAvailable0h12NotificationjK0ySb_SbtF",
+            "usr": "s:15SecuredCallsSDK19SheetViewControllerC04showD028isContactPermissionAvailable0h12NotificationjK00h8LocationjK00h5UsingM7ServiceySb_S3btF",
+            "mangledName": "$s15SecuredCallsSDK19SheetViewControllerC04showD028isContactPermissionAvailable0h12NotificationjK00h8LocationjK00h5UsingM7ServiceySb_S3btF",
             "moduleName": "SecuredCallsSDK",
             "declAttributes": [
               "Preconcurrency",
@@ -2359,7 +2711,7 @@
           {
             "kind": "Function",
             "name": "showSheet",
-            "printedName": "showSheet(isContactPermissionAvailable:isNotificationPermissionAvailable:)",
+            "printedName": "showSheet(isContactPermissionAvailable:isNotificationPermissionAvailable:isLocationPermissionAvailable:isUsingLocationService:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2377,11 +2729,23 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15SecuredCallsSDK34PermissionBottomSheetViewPresenterO04showF009isContactD9Available0j12NotificationdL0ySb_SbtFZ",
-            "mangledName": "$s15SecuredCallsSDK34PermissionBottomSheetViewPresenterO04showF009isContactD9Available0j12NotificationdL0ySb_SbtFZ",
+            "usr": "s:15SecuredCallsSDK34PermissionBottomSheetViewPresenterO04showF009isContactD9Available0j12NotificationdL00j8LocationdL00j5UsingN7ServiceySb_S3btFZ",
+            "mangledName": "$s15SecuredCallsSDK34PermissionBottomSheetViewPresenterO04showF009isContactD9Available0j12NotificationdL00j8LocationdL00j5UsingN7ServiceySb_S3btFZ",
             "moduleName": "SecuredCallsSDK",
             "static": true,
             "declAttributes": [
@@ -3385,6 +3749,91 @@
                 "declKind": "Accessor",
                 "usr": "s:15SecuredCallsSDK13CallInfoModelV8callTime10Foundation4DateVvM",
                 "mangledName": "$s15SecuredCallsSDK13CallInfoModelV8callTime10Foundation4DateVvM",
+                "moduleName": "SecuredCallsSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isIncomingCall",
+            "printedName": "isIncomingCall",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15SecuredCallsSDK13CallInfoModelV010isIncomingD0Sbvp",
+            "mangledName": "$s15SecuredCallsSDK13CallInfoModelV010isIncomingD0Sbvp",
+            "moduleName": "SecuredCallsSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15SecuredCallsSDK13CallInfoModelV010isIncomingD0Sbvg",
+                "mangledName": "$s15SecuredCallsSDK13CallInfoModelV010isIncomingD0Sbvg",
+                "moduleName": "SecuredCallsSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15SecuredCallsSDK13CallInfoModelV010isIncomingD0Sbvs",
+                "mangledName": "$s15SecuredCallsSDK13CallInfoModelV010isIncomingD0Sbvs",
+                "moduleName": "SecuredCallsSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15SecuredCallsSDK13CallInfoModelV010isIncomingD0SbvM",
+                "mangledName": "$s15SecuredCallsSDK13CallInfoModelV010isIncomingD0SbvM",
                 "moduleName": "SecuredCallsSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -5318,6 +5767,85 @@
           },
           {
             "kind": "Var",
+            "name": "isIncomingCall",
+            "printedName": "isIncomingCall",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@SecuredCallsSDK@objc(cs)CallHistoryEntity(py)isIncomingCall",
+            "mangledName": "$s15SecuredCallsSDK17CallHistoryEntityC010isIncomingD0Sbvp",
+            "moduleName": "SecuredCallsSDK",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@SecuredCallsSDK@objc(cs)CallHistoryEntity(im)isIncomingCall",
+                "mangledName": "$s15SecuredCallsSDK17CallHistoryEntityC010isIncomingD0Sbvg",
+                "moduleName": "SecuredCallsSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@SecuredCallsSDK@objc(cs)CallHistoryEntity(im)setIsIncomingCall:",
+                "mangledName": "$s15SecuredCallsSDK17CallHistoryEntityC010isIncomingD0Sbvs",
+                "moduleName": "SecuredCallsSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "note",
             "printedName": "note",
             "children": [
@@ -5929,6 +6457,27 @@
           },
           {
             "kind": "Function",
+            "name": "requestLocationPermissionAsync",
+            "printedName": "requestLocationPermissionAsync()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15SecuredCallsSDK0aB0C30requestLocationPermissionAsyncyyYaFZ",
+            "mangledName": "$s15SecuredCallsSDK0aB0C30requestLocationPermissionAsyncyyYaFZ",
+            "moduleName": "SecuredCallsSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "processNotification",
             "printedName": "processNotification()",
             "children": [
@@ -6206,6 +6755,63 @@
               "Final",
               "AccessControl"
             ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "callBackFromCallHistory",
+            "printedName": "callBackFromCallHistory(callId:number:callType:callIntent:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CallType",
+                "printedName": "SecuredCallsSDK.CallType",
+                "usr": "s:15SecuredCallsSDK8CallTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15SecuredCallsSDK0aB0C23callBackFromCallHistory0D2Id6number0D4Type0D6IntentySS_SSSgAA0gK0OSStYaKFZ",
+            "mangledName": "$s15SecuredCallsSDK0aB0C23callBackFromCallHistory0D2Id6number0D4Type0D6IntentySS_SSSgAA0gK0OSStYaKFZ",
+            "moduleName": "SecuredCallsSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -8564,7 +9170,7 @@
     {
       "filePath": "\/Users\/runner\/work\/sc-ios-v1\/sc-ios-v1\/SecuredCallsVoiceSDK\/SecuredCalls\/Enums\/CallType.swift",
       "kind": "IntegerLiteral",
-      "offset": 221,
+      "offset": 343,
       "length": 8,
       "value": "1"
     },
@@ -8683,9 +9289,23 @@
     {
       "filePath": "\/Users\/runner\/work\/sc-ios-v1\/sc-ios-v1\/SecuredCallsVoiceSDK\/SecuredCalls\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 286,
+      "offset": 298,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sc-ios-v1\/sc-ios-v1\/SecuredCallsVoiceSDK\/SecuredCalls\/Configuration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 327,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sc-ios-v1\/sc-ios-v1\/SecuredCallsVoiceSDK\/SecuredCalls\/Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 361,
+      "length": 4,
+      "value": "\"ap\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sc-ios-v1\/sc-ios-v1\/SecuredCallsVoiceSDK\/SecuredCalls\/Networking\/SCNetworkManager.swift",
@@ -8704,16 +9324,37 @@
     {
       "filePath": "\/Users\/runner\/work\/sc-ios-v1\/sc-ios-v1\/SecuredCallsVoiceSDK\/SecuredCalls\/UserInterface\/View\/PermissionBottomSheetView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4872,
+      "offset": 6516,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/sc-ios-v1\/sc-ios-v1\/SecuredCallsVoiceSDK\/SecuredCalls\/UserInterface\/View\/PermissionBottomSheetView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4913,
+      "offset": 6557,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sc-ios-v1\/sc-ios-v1\/SecuredCallsVoiceSDK\/SecuredCalls\/UserInterface\/View\/PermissionBottomSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6595,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sc-ios-v1\/sc-ios-v1\/SecuredCallsVoiceSDK\/SecuredCalls\/UserInterface\/View\/PermissionBottomSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6626,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sc-ios-v1\/sc-ios-v1\/SecuredCallsVoiceSDK\/SecuredCalls\/Networking\/Models\/RequestModels\/LocationBasedNumberRequestModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 390,
+      "length": 2,
+      "value": "-1"
     },
     {
       "filePath": "\/Users\/runner\/work\/sc-ios-v1\/sc-ios-v1\/SecuredCallsVoiceSDK\/SecuredCalls\/Services\/EncryptionService.swift",
@@ -8830,16 +9471,37 @@
     {
       "filePath": "\/Users\/runner\/work\/sc-ios-v1\/sc-ios-v1\/SecuredCallsVoiceSDK\/SecuredCalls\/Services\/LoggerService.swift",
       "kind": "Array",
-      "offset": 736,
+      "offset": 687,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sc-ios-v1\/sc-ios-v1\/SecuredCallsVoiceSDK\/SecuredCalls\/Services\/LoggerService.swift",
       "kind": "StringLiteral",
-      "offset": 775,
+      "offset": 726,
       "length": 7,
       "value": "\" $$$ \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sc-ios-v1\/sc-ios-v1\/SecuredCallsVoiceSDK\/SecuredCalls\/Services\/LoggerService.swift",
+      "kind": "StringLiteral",
+      "offset": 3450,
+      "length": 62,
+      "value": "\"https:\/\/api.development.securedcalls.com\/branding\/device\/log\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sc-ios-v1\/sc-ios-v1\/SecuredCallsVoiceSDK\/SecuredCalls\/Services\/LoggerService.swift",
+      "kind": "StringLiteral",
+      "offset": 3824,
+      "length": 5,
+      "value": "\"iOS\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sc-ios-v1\/sc-ios-v1\/SecuredCallsVoiceSDK\/SecuredCalls\/Services\/LoggerService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3847,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sc-ios-v1\/sc-ios-v1\/SecuredCallsVoiceSDK\/SecuredCalls\/Networking\/Enums\/HTTPHeaderFields.swift",
@@ -9040,9 +9702,16 @@
     {
       "filePath": "\/Users\/runner\/work\/sc-ios-v1\/sc-ios-v1\/SecuredCallsSDK\/Public\/SecuredCalls.swift",
       "kind": "BooleanLiteral",
-      "offset": 4832,
+      "offset": 5016,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sc-ios-v1\/sc-ios-v1\/SecuredCallsSDK\/Public\/SecuredCalls.swift",
+      "kind": "StringLiteral",
+      "offset": 12924,
+      "length": 2,
+      "value": "\"\""
     }
   ]
 }

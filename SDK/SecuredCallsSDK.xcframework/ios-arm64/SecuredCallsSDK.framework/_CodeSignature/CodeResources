@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/SecuredCallsSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		gXtQ1nBanLMKeiWhVFaVGvMzdw8=
+		0Xk4lPgLK0eHIs8AqWk0Au7SL/I=
 		</data>
 		<key>Modules/SecuredCallsSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		55dYRkgnUlJI8cKbxIH7hHJuzLQ=
+		iZV29X3Bp8OiSMmzsNzNRSdQ0Ss=
 		</data>
 		<key>Modules/SecuredCallsSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/SecuredCallsSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		55dYRkgnUlJI8cKbxIH7hHJuzLQ=
+		iZV29X3Bp8OiSMmzsNzNRSdQ0Ss=
 		</data>
 		<key>Modules/SecuredCallsSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		YhC4fY5Gr1F1njB97/zS3aY3mmA=
+		yDgBICz3ToALs39rd+7dviYUNDI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>SecuredCallsData.momd/SecuredCallsData.mom</key>
 		<data>
-		r88egKfo1iqEVPu+EHE9fgh96C0=
+		3jXTOVUFWjhn9zr4FbWGn2+ai24=
 		</data>
 		<key>SecuredCallsData.momd/VersionInfo.plist</key>
 		<data>
-		k7+HHQs+9urGr8rIbhKEHOjAZXE=
+		ysBdcK3adP4KzTnHiYBZDQeuRHM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -58,14 +58,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			smocKUeEcSN6akIvG2cSlcrVINddj25/hfGE1zXKjws=
+			A99tfZRCe16HzBB/N7oxzhqxQwZ6X/oon51K812Pwug=
 			</data>
 		</dict>
 		<key>Modules/SecuredCallsSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xCppXrQbNkid279CQV13iHf1xeblJ4TspkPt9Xdy+0E=
+			WObDWLzzLvatm7JPRGKpXrG+7UX1ihHKhHt9bzrYZm0=
 			</data>
 		</dict>
 		<key>Modules/SecuredCallsSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -79,14 +79,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xCppXrQbNkid279CQV13iHf1xeblJ4TspkPt9Xdy+0E=
+			WObDWLzzLvatm7JPRGKpXrG+7UX1ihHKhHt9bzrYZm0=
 			</data>
 		</dict>
 		<key>Modules/SecuredCallsSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B092OxgE8m/JF8DQoCxJECE8hwyMOTYwow1oUL4uFCk=
+			hWt2qwf5bXZic5SuwPy+x7Jebtjxx4z6GZlihW+eRTA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -100,14 +100,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lQrlkexOuC6kprHC93lfiV0rwmzdqISmooYGPPN+u1U=
+			ah9iqasdEowSfPnmov+mxXGyPJadMJOQ3sj0s1LbJc0=
 			</data>
 		</dict>
 		<key>SecuredCallsData.momd/VersionInfo.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vNXMzkuiWjMWmkb0/HJQFPhczI2c27DbaPDfD5JqUZA=
+			lQYGpLukOt+ALtdxvran+MTihIeqShMoSJgwp5eoi6k=
 			</data>
 		</dict>
 	</dict>
